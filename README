@@ -1,0 +1,17 @@
+bull
+    - app
+        -jobs [todos os background-jobs]
+           (registration[JOBNAME].js)
+        -lib
+            Queue.js [Registrar todas as nossas filas]
+
+    - config
+        redis.js [config DB para BULL]
+
+    - queue.js [Inicializa as Filas e chama os metodos]
+
+
+
+
+redis install docker:
+    docker run --name redis -p 6379:6379 -d -t redis:alpine
